@@ -10,7 +10,7 @@
 
 // console.log(output);
 
-// let num1 = 20;
-// let num2 = 40;
-// let output = `the total sum of ${num1} and ${num2} is: ${num1 + num2}`;
-// console.log(output);
+let num1 = 20;
+let num2 = 40;
+let output = `the total sum of ${num1} and ${num2} is: ${num1 + num2}`;
+console.log(output);
