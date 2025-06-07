@@ -19,16 +19,35 @@
 // }, 0);
 // console.log(finalValue);
 
-let list = [1, 22, 5, 7, 20, 2];
-let output = list
-  .filter((value) => {
-    if (value % 2 === 0) {
-      return true;
-    } else {
-      return false;
-    }
-  })
-  .reduce((previous, current) => {
-    return previous + current;
-  }, 0);
-console.log(output);
+// let list = [1, 22, 5, 7, 20, 2];
+// let output = list
+//   .filter((value) => {
+//     if (value % 2 === 0) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   })
+//   .reduce((previous, current) => {
+//     return previous + current;
+//   }, 0);
+// console.log(output);
+
+let array = [1, 44, 66, 45, 31, 3, 5, 67, 90, 100, 12, 18];
+let output = array.filter((value, index) => {
+  if (value % 2 === 0) {
+    return false;
+  } else {
+    return true;
+  }
+});
+// console.log(output);
+
+let finaloutput = output.reduce((previous, current) => {
+  return previous + current;
+}, 0);
+
+console.log(
+  `The odd number of given array list are: ${output}.
+and the sum of those output are ${finaloutput}`
+);
