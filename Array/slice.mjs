@@ -33,21 +33,45 @@
 //   }, 0);
 // console.log(output);
 
-let array = [1, 44, 66, 45, 31, 3, 5, 67, 90, 100, 12, 18];
-let output = array.filter((value, index) => {
-  if (value % 2 === 0) {
-    return false;
-  } else {
-    return true;
-  }
-});
-// console.log(output);
+// let array = [1, 44, 66, 45, 31, 3, 5, 67, 90, 100, 12, 18];
+// let output = array.filter((value, index) => {
+//   if (value % 2 === 0) {
+//     return false;
+//   } else {
+//     return true;
+//   }
+// });
+// // console.log(output);
 
-let finaloutput = output.reduce((previous, current) => {
-  return previous + current;
-}, 0);
+// let finaloutput = output.reduce((previous, current) => {
+//   return previous + current;
+// }, 0);
 
-console.log(
-  `The odd number of given array list are: ${output}.
-and the sum of those output are ${finaloutput}`
-);
+// console.log(
+//   `The odd number of given array list are: ${output}.
+// and the sum of those output are ${finaloutput}`
+// );
+
+let a = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let b = a
+  .filter((value, index) => {
+    if (value % 2 === 0) {
+      return true;
+    } else {
+      return false;
+    }
+  })
+
+  .find((value, index) => {
+    if (value > 5 || value > 8) {
+      return true;
+    } else {
+      return false;
+    }
+  });
+console.log(b);
+//   .reduce((previous, current) => {
+//     return previous + current;
+//   }, 0);
+
+// console.log(b);
