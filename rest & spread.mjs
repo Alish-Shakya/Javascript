@@ -20,6 +20,11 @@
 // };
 // sum(1, 2, 3, 4, 5);
 
-let [arr, ...a] = [1, 2, 3, 4, 5];
-console.log(arr);
-console.log(a);
+// let [arr, ...a] = [1, 2, 3, 4, 5];
+// console.log(arr);
+// console.log(a);
+
+let sub = (b, ...c) => {
+  console.log(c);
+};
+sub(20, 10, 5);
