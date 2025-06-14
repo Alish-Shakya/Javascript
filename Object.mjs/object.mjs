@@ -1,7 +1,7 @@
-// // object
-// // {} : curly braces or block
-// // Array is a collection of values where as object is a collection of key value pairs
-// // key value part are called properties.
+/* object
+ {} : curly braces or block
+ Array is a collection of values where as object is a collection of key value pairs
+ key value part are called properties.*/
 // let info = {
 //   name: "ram",
 //   age: 20,
@@ -28,22 +28,35 @@
 // // Duplicate key dosenm't exits, if exut the duplicate key overrites by last key value
 // console.log(info);
 
-let info = {
-  name: "ram",
-  favFruits: ["apple", "mango", "banana"],
-  location: {
-    country: "nepal",
-    province: "bagmati",
-    city: "ktm",
-  },
-  age: () => {
-    // console.log("I'm function");
-    return 20;
-  },
+// let info = {
+//   name: "ram",
+//   favFruits: ["apple", "mango", "banana"],
+//   location: {
+//     country: "nepal",
+//     province: "bagmati",
+//     city: "ktm",
+//   },
+//   age: () => {
+//     // console.log("I'm function");
+//     return 20;
+//   },
+// };
+// // console.log(info);
+// console.log(info.favFruits[0]);
+// console.log(info.location.city);
+// // info.age();
+// let year = info.age;
+// console.log(year);
+
+let obj = {
+  name: "Alish",
+  age: 20,
+  address: "KTM",
 };
-// console.log(info);
-console.log(info.favFruits[0]);
-console.log(info.location.city);
-// info.age();
-let year = info.age;
-console.log(year);
+console.log(obj.name);
+
+delete obj.address;
+console.log(obj);
+
+obj.address = "Kathmandu";
+console.log(obj);
